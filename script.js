@@ -1,5 +1,6 @@
 import words from "./word.js"
 
+document.addEventListener("DOMContentLoaded", ()=>{
 const wordtext=document.querySelector(".word");
 const hinttext=document.querySelector(".hint span");
 const refreshbtn=document.querySelector(".refresh-word");
@@ -72,6 +73,8 @@ const checkword=()=>
     initGame()
 }
 
-checkbtn.addEventListener("click",checkword)
-initGame()
+checkbtn.addEventListener("click",checkword);
 refreshbtn.addEventListener("click", initGame);
+initGame()
+
+});
