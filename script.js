@@ -2,7 +2,7 @@ import words from "./word.js"
 
 const wordtext=document.querySelector(".word");
 const hinttext=document.querySelector(".hint span");
-const refeshbtn=document.querySelector(".refresh-word");
+const refreshbtn=document.querySelector(".refresh-word");
 const checkbtn=document.querySelector(".check-word");
 const inputfield=document.querySelector("input");
 const timertext=document.querySelector(".time span b");
@@ -74,3 +74,4 @@ const checkword=()=>
 
 checkbtn.addEventListener("click",checkword)
 initGame()
+refreshbtn.addEventListener("click", initGame);
